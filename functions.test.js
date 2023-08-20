@@ -7,3 +7,15 @@ test("Adds 2 + 2 to equal 4", () => {
 test("Adds 2 + 2 to not equal 5", () => {
   expect(functions.add(2, 2)).not.toBe(5);
 });
+
+// CHECK FOR TRUTHY & FALSY VALUES
+
+// teBeNull
+test("Should be null", () => {
+  expect(functions.isNull()).toBeNull();
+});
+
+// toBeUndefined
+// toBeDefined
+// toBeTruthy
+// toBeFalsy

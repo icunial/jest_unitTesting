@@ -8,10 +8,17 @@ const closeDatabase = () => {
   console.log("Database Closed...");
 };
 
-beforeEach(() => {
+/* beforeEach(() => {
   initDatabase();
 });
 afterEach(() => {
+  closeDatabase();
+}); */
+
+beforeAll(() => {
+  initDatabase();
+});
+afterAll(() => {
   closeDatabase();
 });
 

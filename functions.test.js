@@ -9,13 +9,16 @@ test("Adds 2 + 2 to not equal 5", () => {
 });
 
 // CHECK FOR TRUTHY & FALSY VALUES
+// toBeUndefined
+// toBeDefined
+// toBeTruthy
 
 // teBeNull
 test("Should be null", () => {
   expect(functions.isNull()).toBeNull();
 });
 
-// toBeUndefined
-// toBeDefined
-// toBeTruthy
 // toBeFalsy
+test("Should be falsy", () => {
+  expect(functions.checkValue(null)).toBeFalsy();
+});
